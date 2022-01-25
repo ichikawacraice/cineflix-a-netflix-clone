@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+:root {
+  --vermelho: #E50914;
+  --preto: #141414;  
+  --cinza-claro: #AAA;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+  text-decoration: none;
+  color: white;
+}
+
+.body {
+  background: var(--preto);
+  font-family: 'Ubuntu', sans-serif;
+}
+i {
+  font-family: "FontAwesome";
+  font-style: normal;
+  font-size: 18px;
+}
+.container {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+
+.btn {
+  border: none;
+  color: white;
+  background-color: transparent;
+  padding: 7px 20px;
+  border-radius: 5px;
+  margin-top: 30px;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.btn:hover {
+  opacity: 80%;
+}
+/* HEADER */
+
+#navbar {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: calc(100% - 100px);
+}
+
+.logo {
+  color: var(--vermelho);
+  font-size: 3rem;
+  font-weight: 700;
+  margin-right: 50px;
+}
+.nav {
+  width: 100%;
+}
+.nav-link {
+  margin-right: 20px;
+}
+.nav-link.active {
+  font-weight: 700;
+}
+.nav-link:hover {
+  color: var(--cinza-claro);
+}
+.bar-right {
+  text-align: end;
+  min-width: 120px;  
+}
+.bar-right .fas {
+  margin: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    width: calc(100% - 40px);
+  }
+  .bar-right {
+    position: absolute;
+    top: 10px;
+    right: 0;
+  }
+  .container {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+/* DESTAQUE */
+.destaque {
+  background: linear-gradient(rgba(0,0,0,30%), rgba(0,0,0,80%) 100%), url('/img/peaky-blinders.jpg');
+  height: 700px;
+  background-size: cover;
+  background-position: center;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.container .info {
+  max-width: 500px;
+}
+
+.destaque .detalhes .idade {
+  color: rgba(255,255,255,0.6);
+  border: 1px solid rgba(255,255,255,0.6);
+  padding: 1px;
+  margin-right: 5px;
+}
+.destaque .tipo {
+  font-size: 1.2rem;
+  color: var(--cinza-claro);
+}
+.destaque .titulo {
+  font-size: 1.8rem;
+  margin: 5px 0;
+}
+
+.destaque .sinopse {
+  margin: 30px 0;
+}
+
+.destaque .autor {
+  font-style: italic;
+}
+.btn.assistir {
+  background-color: white;
+  color: var(--preto);
+}
+.btn.mais-informacoes {
+  background-color: rgba(109, 109, 110, 0.7);
+  color: white;
+}
+.btn.assistir .fa-play {
+  color:var(--preto);
+}
+/* POSTERS */
+.posters {
+  margin-bottom: 20px;
+}
+.posters .titulo {
+  margin-bottom: 10px;
+}
+/* LANCAMENTOS */
+.lancamentos {
+  margin-top: -80px;
+}
+
+/* BOX FILME */
+.box-filme {
+  margin: 5px;
+  transition: ease-in-out 0.3s;
+  margin-bottom: 10px;
+}
+.box-filme:hover {
+  margin: 0;
+}
+
+.box-filme-img {
+  border-radius: 5px;
+}
+
