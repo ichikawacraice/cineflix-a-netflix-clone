@@ -1,21 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
 :root {
-  --vermelho: #E50914;
-  --preto: #141414;  
-  --cinza-claro: #AAA;
+  --vermelho: #e50914;
+  --preto: #141414;
+  --cinza-claro: #aaa;
 }
 
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;  
+  box-sizing: border-box;
   text-decoration: none;
   color: white;
 }
 
 .body {
   background: var(--preto);
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 i {
   font-family: "FontAwesome";
@@ -73,7 +73,7 @@ i {
 }
 .bar-right {
   text-align: end;
-  min-width: 120px;  
+  min-width: 120px;
 }
 .bar-right .fas {
   margin: 10px;
@@ -97,11 +97,12 @@ i {
 }
 /* DESTAQUE */
 .destaque {
-  background: linear-gradient(rgba(0,0,0,30%), rgba(0,0,0,80%) 100%), url('/img/peaky-blinders.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 30%), rgba(0, 0, 0, 80%) 100%),
+    url("../img/peaky-blinders.jpg");
   height: 700px;
   background-size: cover;
   background-position: center;
-  
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -111,8 +112,8 @@ i {
 }
 
 .destaque .detalhes .idade {
-  color: rgba(255,255,255,0.6);
-  border: 1px solid rgba(255,255,255,0.6);
+  color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.6);
   padding: 1px;
   margin-right: 5px;
 }
@@ -141,7 +142,7 @@ i {
   color: white;
 }
 .btn.assistir .fa-play {
-  color:var(--preto);
+  color: var(--preto);
 }
 /* POSTERS */
 .posters {
@@ -168,4 +169,3 @@ i {
 .box-filme-img {
   border-radius: 5px;
 }
-
